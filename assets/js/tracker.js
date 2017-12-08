@@ -1,13 +1,2 @@
 init();
-var _gauges = _gauges || [];
-(function() {
-  var t   = document.createElement('script');
-  t.type  = 'text/javascript';
-  t.async = true;
-  t.id    = 'gauges-tracker';
-  t.setAttribute('data-site-id', '4d9b563d588f4f6e7500000f');
-  t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
-  t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(t, s);
-})();
+var easeInOutQuad = new SmoothScroll('[data-easing="easeInOutQuad"]', {easing: 'easeInOutQuad'});

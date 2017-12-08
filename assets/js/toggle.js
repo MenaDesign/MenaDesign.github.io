@@ -5,7 +5,7 @@ var logo = document.querySelector("#logo");
 var timeless = document.querySelector('span.timeless');
 var closeContactBtn = document.querySelector('.close'); 
 var contactBtn = document.querySelector('.contact-me');
-var popup = document.querySelector('#contactPopup');
+var popup = document.querySelectorAll('#contactPopup');
 
 function toggleClass(el, _class) {
 
@@ -37,18 +37,16 @@ switcher.addEventListener("click", function(){
   toggleClass(switcher, 'lightLogo');
   toggleMultipleEl(rays, 'noRays');
   toggleMultipleEl(rays, 'lightRays');
-  logo.title = logo.title === "Turn on the light..." ? "Turn off the light..." : "Turn on the light...";
+  logo.title = logo.title === "Night time..." ? "Day time..." : "Night time...";
 });
 
 closeContactBtn.addEventListener("click", function(e){
-
-    toggleClass(popup, 'hide');
-
+  toggleMultipleEl(popup, 'hide');
 });
 
 
 contactBtn.addEventListener("click", function(){
-  toggleClass(popup, 'hide');
+  toggleMultipleEl(popup, 'hide');
 
 });
 
