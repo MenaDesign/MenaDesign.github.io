@@ -379,6 +379,7 @@ footer {
   color: #9C27B0; }
  figcaption{
   color:  #2aa198;
+  margin-top: -1em;
  }
 .portfolio--header {
   position: absolute;
@@ -456,15 +457,26 @@ footer {
   width: 40vw;
   min-width: 40vw; }
 .portfolio.web .view > .current figure img {
-  margin-left: -40px;
-  margin-top: -20px;
+  margin-top: -14px;
   box-shadow: none;
   border-radius: 0px; }
 .portfolio.web .view > .next img {
   transform: rotateY(-20deg) scale(0.85) translateX(10%); }
 .portfolio.web .view > .previous img {
   transform: rotateY(20deg) scale(0.85) translateX(-90%); }
-
+@media screen and (max-width: 1023px){
+.portfolio.web .view > .current figure img {
+  margin-left: -80px;
+}
+.portfolio .view > *.current figure figcaption {
+    margin-left: -3em;
+    }
+}
+@media screen and (min-width: 1024px){
+.portfolio.web .view > .current figure img {
+  margin-left: -40px;
+}
+  }
 .frame.web,
 .frame.mobile {
   font-size: 320px;
@@ -819,7 +831,6 @@ iframe {
   border: 0;
   margin: 0; }
 
-/*--------------------------------*/
 
 #about-me {
   margin: 0 5%;
@@ -889,7 +900,7 @@ main {
     opacity: 0; }
   .nav-docked main {
     padding-top: 0; }
-/*--------------------------------*/
+
 
 main h1, main h2, main h3, main h4, main h5 {
   font-family: "haptik", Futura, Trebuchet MS, Arial, sans-serif;
@@ -915,7 +926,7 @@ main :visited {
   cursor: pointer;
   font-weight: normal;
   display: inline-block;
-  background-color: #6122FF;
+  background-color: #268bd2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -925,11 +936,11 @@ main :visited {
   background-clip: text;
   text-fill-color: transparent;
   background-image: linear-gradient(to bottom right, #F8BBD0, #E91E63, #880E4F);
-  transition: all 0.2s cubic-bezier(0.68, 0, 0.265, 1); }
+  transition: all 0.1s cubic-bezier(0.68, 0, 0.265, 1); }
   main :link:hover,
   main :visited:hover {
     background-image: none;
-    text-shadow: 0 3px 8px #00CAFF;
+    text-shadow: 0 2px 4px #268bd2;
     transform: translateY(-5%); }
 
 
@@ -1001,4 +1012,10 @@ main :visited {
   main h3 {
     font-size: 1.25rem; }
   main h4, main h5 {
-    font-size: 1rem; } f}
+    font-size: 1rem; } }
+
+
+#name {
+  font-family: 'IAmOnline' ;
+  font-size: 50px;
+}
