@@ -2,9 +2,6 @@
       .contact-icon{
     fill: black;
   }
-  #contact-info{
-    color: black;
-  }
 #contact-phone{
   display:none;
 }
@@ -107,8 +104,7 @@ text-align: center;
 .popup {
   margin: 1% auto;
   padding: 20px;
-  background: white;
-  background: rgba(255,255,255,0.975);
+  background: #fff;
   border-radius: 10px;
   position: relative;
   transition: all .5s ease-in-out;
