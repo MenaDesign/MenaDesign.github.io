@@ -540,8 +540,10 @@ footer {
   -webkit-transform: rotateY(20deg) scale(0.85) translateX(-90%);
           transform: rotateY(20deg) scale(0.85) translateX(-90%); }
 @media screen and (max-width: 1023px){
+
   .portfolio .view > *.next img{
-  margin-left: -20vw;
+  margin-left: -10vw;
+
 }
 
 .portfolio.web .view > .current figure img {
