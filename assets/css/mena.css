@@ -553,7 +553,8 @@ display: inline-block;
 position: relative;    
 z-index: 200;     
 padding: 0 2em;
-margin: 0 -2em
+margin: 0 -2em;
+-webkit-tap-highlight-color: transparent;
 }
 .portfolio.web .view > .next img {
     -webkit-transform: rotateY(-20deg) scale(0.85) translateX(-10%);
