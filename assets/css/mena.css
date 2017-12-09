@@ -336,7 +336,7 @@ footer {
             transform: translateX(15vw); }
   .view > .next {
     opacity: 1;
-    -webkit-transform: translateX(85vw);
+        -webkit-transform: translateX(85vw);
         -ms-transform: translateX(85vw);
             transform: translateX(85vw); }
   .view > .previous {
@@ -548,11 +548,20 @@ footer {
   }
 
 @media screen and (max-width: 1023px){
-.portfolio.web .view > .next img {
-    -webkit-transform: rotateY(-20deg) scale(0.85) translateX(1%);
-    transform: rotateY(-20deg) scale(0.85) translateX(1%);
+.portfolio .view > *.next{
+display: inline-block;     
+position: relative;    
+z-index: 200;     
+padding: 0 2em;
+margin: 0 -2em
 }
-
+.portfolio.web .view > .next img {
+    -webkit-transform: rotateY(-20deg) scale(0.85) translateX(-10%);
+    transform: rotateY(-20deg) scale(0.85) translateX(-10%);
+}
+.portfolio.web .view > .previous img {
+  -webkit-transform: rotateY(20deg) scale(0.85) translateX(-90%);
+          transform: rotateY(20deg) scale(0.85) translateX(-90%); }
 .portfolio.web .view > .current figure img {
   margin-left: -80px;
 }
