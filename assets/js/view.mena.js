@@ -87,7 +87,7 @@ function View(elements,opts){
     return this;
   }
 
-  // now that we have the dom shit figured, lets setup listeners
+  // now that we have the dom figured, lets setup listeners
   _ELEMENT.classList.add(_OPTIONS.className)
 
   //get child nodes
