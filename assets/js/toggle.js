@@ -37,7 +37,7 @@ switcher.addEventListener("click", function(){
   toggleClass(switcher, 'lightLogo');
   toggleMultipleEl(rays, 'noRays');
   toggleMultipleEl(rays, 'lightRays');
-  logo.title = logo.title === "Night time..." ? "Day time..." : "Night time...";
+  logo.title = logo.title === "Turn on the light..." ? "Turn off the light..." : "Turn on the light...";
 });
 
 closeContactBtn.addEventListener("click", function(e){
