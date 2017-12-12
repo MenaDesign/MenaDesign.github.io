@@ -70,26 +70,6 @@ function init(){
 
   View('.slideshow');
 
-  Array.prototype.forEach.call(
-    document.images,
-    function(element){
-      if( !inview.is(element,'200%') ){
-        element.setAttribute('data-inview-src',element.getAttribute('src'));
-        element.removeAttribute('src');
-      }
-    }
-  );
-
-  inview(
-    document.querySelectorAll('[data-inview-src]'),
-    {
-      threshold: '100%',
-      callback: function(element){
-        element.setAttribute('src',element.getAttribute('data-inview-src'));
-      }
-    }
-  );
-
 
 
 }
