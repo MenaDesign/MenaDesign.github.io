@@ -1,9 +1,7 @@
-
-
 function View(elements,opts){
 
   if( !(this instanceof View) ){
-    new View( elements, opts );
+    new View( elements, opts);
     return;
   }
 
@@ -87,13 +85,10 @@ function View(elements,opts){
     return this;
   }
 
-  // now that we have the dom figured, lets setup listeners
   _ELEMENT.classList.add(_OPTIONS.className)
 
-  //get child nodes
   _CHILDREN = _ELEMENT.children;
 
-  //setup interactions with child objects
   Array.prototype.forEach.call( _CHILDREN, _initChild );
 
   // PUBLIC functions
