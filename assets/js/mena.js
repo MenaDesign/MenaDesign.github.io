@@ -62,7 +62,6 @@ function init(){
   View('.slideshow');
 
 
-
 }
 
 

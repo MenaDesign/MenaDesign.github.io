@@ -1,12 +1,3 @@
-var html = document.querySelector('html');
-var switcher = document.querySelector('#switcher');
-var rays = document.querySelectorAll('.noRays');
-var logo = document.querySelector("#logo");
-var timeless = document.querySelector('span.timeless');
-var closeContactBtn = document.querySelector('.close'); 
-var contactBtn = document.querySelector('.contact-me');
-var popup = document.querySelectorAll('#contactPopup');
-
 function toggleClass(el, _class) {
 
   if (el && el.classList.contains(_class)) {
@@ -29,7 +20,17 @@ function toggleMultipleEl(el, _class){
   }
 }
 
-//on click toggle some classes
+function toggle(){
+
+var html = document.querySelector('html');
+var switcher = document.querySelector('#switcher');
+var rays = document.querySelectorAll('.noRays');
+var logo = document.querySelector("#logo");
+var timeless = document.querySelector('span.timeless');
+var closeContactBtn = document.querySelector('.close'); 
+var contactBtn = document.querySelector('.contact-me');
+var popup = document.querySelectorAll('#contactPopup');
+
 switcher.addEventListener("click", function(){
   toggleClass(html, 'darkMode');
   toggleClass(html, 'lightMode');
@@ -49,4 +50,6 @@ contactBtn.addEventListener("click", function(){
   toggleMultipleEl(popup, 'hide');
 
 });
+}
 
+toggle();
