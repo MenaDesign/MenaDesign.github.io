@@ -45,14 +45,18 @@
   font-stretch: normal; }
 @font-face{
 font-family: 'IAmOnline';
-src: url(../fonts/Tagline/I_am_online_with_u.ttf) format('truetype');
+src: url(../fonts/Tagline/I_am_online_with_u.eot);
+src: url(../fonts/Tagline/I_am_online_with_u.ttf) format('truetype'), url(../fonts/Tagline/I_am_online_with_u.svg) format('svg'), url(../fonts/Tagline/I_am_online_with_u.eot?#iefix) format("embedded-opentype"), url(../fonts/Tagline/I_am_online_with_u.woff) format("woff"), url(../fonts/Tagline/I_am_online_with_u.woff2) format("woff2");
 }
 @font-face{
 font-family: 'FontTwelve';
-src: url(../fonts/Tagline/FONTTWEL.TTF) format('truetype');
+src: url(../fonts/Tagline/fonttwel.eot);
+src: url(../fonts/Tagline/FONTTWEL.TTF) format('truetype'), url(../fonts/Tagline/fonttwel.svg) format('svg'), url(../fonts/Tagline/fonttwel.woff) format('woff'), url(../fonts/Tagline/fonttwel.woff2) format('woff2'), url(../fonts/Tagline/fonttwel.eot?#iefix) format('embedded-opentype');
 }
 @font-face{
 font-family: 'beauty';
+src: url(../fonts/Tagline/beautydemo.eot) format('embedded-opentype');
 src: url(../fonts/Tagline/BeautyDemo.ttf) format('truetype'),
-  url(../fonts/Tagline/BeautyDemo.otf) format('opentype');
+  url(../fonts/Tagline/BeautyDemo.otf) format('opentype'), url(../fonts/Tagline/beautydemo.woff) format('woff'), url(../fonts/Tagline/beautydemo.woff2) format('woff2'), url(../fonts/Tagline/beautydemo.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/Tagline/beautydemo.svg) format('svg');
 }
