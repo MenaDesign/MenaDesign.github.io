@@ -22,9 +22,7 @@ function handleGesture() {
     if (touchendX >= touchstartX) {
 
         var prev = document.querySelector('.previous');
-
         var current = document.querySelector('.current');
-
         var next = document.querySelector('.next');
 
 
@@ -44,13 +42,11 @@ function handleGesture() {
     }
     
     if (touchendX <= touchstartX) {
-                console.log('left');
+
         var prev = document.querySelector('.previous');
-        console.log(prev);
         var current = document.querySelector('.current');
-        console.log(current);
         var next = document.querySelector('.next');
-        console.log(next);
+
 
           if(next){
             current.classList.add('prev');
