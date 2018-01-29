@@ -1198,3 +1198,18 @@ main :visited {
   font-size: 50px;
 }
 
+/*========== Video ==========*/
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+.embed-container iframe, .embed-container object, .embed-container embed { 
+  position: absolute; 
+  top: 4%; 
+  left: 25%;
+  right: 25%; 
+  width: 50%; 
+  height: 50%; }
