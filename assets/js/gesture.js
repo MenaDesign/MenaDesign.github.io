@@ -20,13 +20,13 @@ gestureZone.addEventListener('touchend', function(event) {
 
 function handleGesture() {
     if (touchendX >= touchstartX) {
-        console.log('right');
+
         var prev = document.querySelector('.previous');
-        console.log(prev);
+
         var current = document.querySelector('.current');
-        console.log(current);
+
         var next = document.querySelector('.next');
-        console.log(next);
+
 
           if(prev){
             current.classList.add('next');
