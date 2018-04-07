@@ -1199,7 +1199,6 @@ main :visited {
 }
 
 /*========== Video ==========*/
-
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1213,3 +1212,7 @@ main :visited {
   right: 25%; 
   width: 50%; 
   height: 50%; }
+
+#myTitle {
+  line-height: 0px;
+}
