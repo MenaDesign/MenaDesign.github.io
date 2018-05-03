@@ -358,7 +358,7 @@ footer {
   .portfolio:nth-child(2n) > svg {
     fill: url(#grad-pink); }
   .portfolio:nth-child(3n) > svg {
-    fill: url(#grad-orange); }
+    fill: url(#grad-purple); }
   .portfolio .frame.mobile {
     position: absolute;
     left: 17vw;
@@ -431,10 +431,11 @@ footer {
         opacity: 1; }
 
 .portfolio:nth-child(2n) .portfolio--header {
-  color: #00CAFF; }
+  color: #9C27B0;
+}
 
 .portfolio:nth-child(3n) .portfolio--header {
-  color: #9C27B0; }
+  color: #E91E63; }
  figcaption{
   color:  #2aa198;
   margin-top: -1em;
@@ -446,7 +447,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: .15em;
   font-size: inherit;
-  color: #FF43AD;
+  color: #2196F3;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -511,11 +512,11 @@ footer {
     -webkit-filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3));
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3)); }
 .portfolio.other .view > .next img {
-  -webkit-transform: rotateY(-20deg) scale(0.85) translateX(20%);
-          transform: rotateY(-20deg) scale(0.85) translateX(20%); }
+  -webkit-transform: rotateY(-20deg) scale(0.85) translateX(7%);
+          transform: rotateY(-20deg) scale(0.85) translateX(7%); }
 .portfolio.other .view > .previous img {
-  -webkit-transform: rotateY(20deg) scale(0.85) translateX(-70%);
-          transform: rotateY(20deg) scale(0.85) translateX(-70%); }
+  -webkit-transform: rotateY(20deg) scale(0.85) translateX(-85%);
+          transform: rotateY(20deg) scale(0.85) translateX(-85%); }
 .portfolio.mobile .view figure img {
   width: 260px;
   min-width: 260px;
@@ -546,7 +547,23 @@ footer {
 }
   }
 
+@media screen and (max-width: 1022px) and (min-width: 900px){
+    .portfolio.web .view > .current figure img{
+    margin-left: -35px !important;
+  }
+.portfolio .view figure figcaption h2{
+  margin: 0 0 1em 1em;
+  }
+  main p, main article{
+    margin-left: 35px;
+  }
+  .portfolio.web .view > .next img {
+    margin-left: 5%;
+  }
+}
+
 @media screen and (max-width: 1023px){
+
 .portfolio .view > *.next{
 display: inline-block;     
 position: relative;    
@@ -701,6 +718,10 @@ margin: 0 -2em;
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)); }
 
+#portfolio-illustration .view > .current {
+    left: 2.5%;
+}
+
 @media screen and (max-width: 900px) {
   .portfolio {
     margin: -80px auto; }
@@ -720,6 +741,7 @@ margin: 0 -2em;
         font-size: 50vw !important;
         left: 25vw !important;
         margin: 10%; }
+
     .portfolio .view > .current figure {
       padding: 0; }
     .portfolio .view figure {
@@ -728,7 +750,8 @@ margin: 0 -2em;
       .portfolio .view figure img {
         width: 70vw !important;
         min-width: 70vw !important;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        margin-left: -33.3333% }
       .portfolio .view figure figcaption {
         padding: 20px 0;
         text-align: left; }
@@ -1092,10 +1115,10 @@ main :visited {
   -ms-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#F8BBD0), color-stop(#E91E63), to(#880E4F));
-  background-image: -webkit-linear-gradient(top left, #F8BBD0, #E91E63, #880E4F);
-  background-image: -o-linear-gradient(top left, #F8BBD0, #E91E63, #880E4F);
-  background-image: linear-gradient(to bottom right, #F8BBD0, #E91E63, #880E4F);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#9C27B0), color-stop(#E91E63), to(#880E4F));
+  background-image: -webkit-linear-gradient(top left, #9C27B0, #E91E63, #880E4F);
+  background-image: -o-linear-gradient(top left, #9C27B0, #E91E63, #880E4F);
+  background-image: linear-gradient(to bottom right, #9C27B0, #E91E63, #880E4F);
   -webkit-transition: all 0.1s cubic-bezier(0.68, 0, 0.265, 1);
   -o-transition: all 0.1s cubic-bezier(0.68, 0, 0.265, 1);
   transition: all 0.1s cubic-bezier(0.68, 0, 0.265, 1); }
@@ -1215,4 +1238,8 @@ main :visited {
 
 #myTitle {
   line-height: 0px;
+}
+
+#behance {
+  margin-left: 5.5px;
 }
