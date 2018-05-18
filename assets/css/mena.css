@@ -529,10 +529,12 @@ footer {
   width: 40vw;
   min-width: 40vw; }
 .portfolio.web .view > .current figure img {
-  margin-top: -16.5px;
+  margin-top: -15px;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0px; }
+
+
 
 .portfolio.web .view > .previous img {
   -webkit-transform: rotateY(20deg) scale(0.85) translateX(-90%);
@@ -723,6 +725,12 @@ margin: 0 -2em;
 }
 
 @media screen and (max-width: 900px) {
+  #portfolio-illustration .next figure{
+  margin-left: 3%;
+}
+.other .view figure{
+  margin-left: 2.25rem;
+}
   .portfolio {
     margin: -80px auto; }
     .portfolio .portfolio--header {
@@ -784,6 +792,7 @@ margin: 0 -2em;
       -webkit-transform-origin: 0% 50%;
           -ms-transform-origin: 0% 50%;
               transform-origin: 0% 50%; } }
+}
 .portfolio--sample--frame {
   position: relative;
   overflow: hidden; }
