@@ -82,6 +82,7 @@ function lastGestureRight(second, third) {
 function handleDesignGesture(title) {
     var first = document.querySelector('.' + title + '-first');
     var second = document.querySelector('.' + title + '-second');
+    if (title === "design"){
     // swipe to left
     if (touchendX <= touchstartX) {
         if (first.classList.contains("current")) {
@@ -93,7 +94,33 @@ function handleDesignGesture(title) {
         if (second.classList.contains("current")) {
             lastGestureRight(first, second);
         }
+    }}
+    else {
+        var third = document.querySelector('.' + title + '-third');
+        if (touchendX <= touchstartX) {
+            if (first.classList.contains("current")) {
+                first.classList.add('prev');
+                firstGestureLeft(first, second);
+                third.classList.add('next');
+            }
+            else if (second.classList.contains("current")) {
+                middleGestureLeft(first, second, third);
+        }
     }
+    // swipe to right
+        if (touchendX >= touchstartX) {
+            if (second.classList.contains("current")) {
+                middleGestureRight(first, second, third);
+            }
+            if (third.classList.contains('current')){
+            lastGestureRight(second, third);
+            second.classList.remove("prev");
+            first.classList.add("prev");
+            first.classList.add("previous");
+        
+            }
+        }
+    }  
 }
 
 function handleWebGesture() {
@@ -116,7 +143,7 @@ function handleWebGesture() {
     // swipe to right
     if (touchendX >= touchstartX) {
         if (current === second) {
-            middleGestureRight(first, second, third)
+            middleGestureRight(first, second, third);
         }
         if (current === third) {
             lastGestureRight(second, third);
